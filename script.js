@@ -91,24 +91,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showGameOutcome(message) {
         winnerMessageDisplay.textContent = message;
-        gameOutcomeModal.style.display = 'flex'; // Make the modal flex to show it
+        gameOutcomeModal.style.display = 'flex'; 
         setTimeout(() => {
             gameOutcomeModal.querySelector('.modal-content').style.opacity = '1';
             gameOutcomeModal.querySelector('.modal-content').style.transform = 'translateY(0)';
-        }, 10); // Delay needed so the transition can take place
+        }, 10); 
     }
 
     closeButton.addEventListener('click', () => {
         gameOutcomeModal.querySelector('.modal-content').style.opacity = '0';
         gameOutcomeModal.querySelector('.modal-content').style.transform = 'translateY(-100px)';
         setTimeout(() => {
-            gameOutcomeModal.style.display = 'none'; // Hide the modal after the transition
-        }, 300); // This should be the same duration as your CSS transition
+            gameOutcomeModal.style.display = 'none';
+        }, 300); 
     });
 
     newGameButton.addEventListener('click', () => {
         handleRestartGame();
-        closeButton.click(); // Use the close button event to hide the modal
+        closeButton.click();
     });
 
 });
