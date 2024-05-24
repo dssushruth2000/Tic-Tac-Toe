@@ -23,3 +23,6 @@ This is a simple web-based Tic Tac Toe game built using HTML, CSS, and JavaScrip
 - **script.js:** Implements the game logic and functionality.
 - **README.md:** This file, providing an overview of the project.
 - **screenshot.png:** A screenshot of the game.
+
+## Contributing
+Contributions to the Elixir project are welcome. Please feel free to fork the repository and submit pull requests.
